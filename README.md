@@ -12,5 +12,6 @@ To run the scripts, the following requirements apply:
 ## Contents
 
 ### imageservice
-1. ``extract_tsc_info.ipynb :`` script to extract important metadata related to a tissue sample collection. This information is stored in a csv file with the name "tsc_<dataset version uuid>"
-2. ``create_servicelinks.ipynb :`` script to create URL and service link instances based on the provided metadata. These instances can be directly uploaded to the KG editor via the API.
+1. ``link_filebundles.ipynb :`` script to automatically link specimen to their corresponding file bundles. Relevant information is stored in a csv file with the name "fb_<dataset version uuid>"
+2. ``extract_tsc_info.ipynb :`` script to extract important metadata related to a tissue sample collection. This information is stored in a csv file with the name "tsc_<dataset version uuid>"
+3. ``create_servicelinks.ipynb :`` script to create URL and service link instances based on the provided metadata. These instances can be directly uploaded to the KG editor via the API.
