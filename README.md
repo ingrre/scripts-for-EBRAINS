@@ -17,5 +17,7 @@ To run the scripts, the following requirements apply:
 3. ``create_servicelinks.ipynb :`` script to create URL and service link instances based on the provided metadata. These instances can be directly uploaded to the KG editor via the API.
 
 ### Advanced Curation
-1. ``make_protocols.ipynb :`` script to automatically create protocols and protocol executions from an excel template file (protocolTemplate.xlsm). The instances rely on the openMINDS python package and are openMINDS conform. They can be directly uploaded to the Knowledge Graph editor if you have read and write permission. Relevant information is stored in a csv file with the name "createdProtocols.csv"
+1. ``make_protocols.ipynb :`` script to automatically create protocols and protocol executions from an excel template file (protocolTemplate.xlsm). The instances rely on the openMINDS python package and are openMINDS conform. They can be directly uploaded to the Knowledge Graph editor if you have read and write permission. Relevant information is stored in a csv file with the name "createdProtocols.csv".
 2. ``protocolTemplate.xlsm :`` Macro-enabled excel file for the creation of protocols and protocol executions (don't forget to enable the macros). Before running the jupyter notebook, please save the file as an .xlsx file. This will disable the macros and allows it to be imported by the python script.
+3. ``patchNupload.ipynb :`` script to add/change metadata from an excel file (e.g. ExamplePatch.xlsx) to existing specimen instances in the KGE.
+4. ``ExamplePatch.xlsx :`` Example excel file to define metadata and update instances.
