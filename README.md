@@ -17,7 +17,7 @@ To run the scripts, the following requirements apply:
 3. ``create_servicelinks.ipynb :`` script to create URL and service link instances based on the provided metadata. These instances can be directly uploaded to the KG editor via the API.
 
 ### Curation
-**Protocols and Protocol Executions**
+**Creating Protocols and Protocol Executions**
 1. ``make_protocols.ipynb :`` script to automatically create protocols and protocol executions from an excel template file (protocolTemplate.xlsm). The instances rely on the openMINDS python package and are openMINDS conform. They can be directly uploaded to the Knowledge Graph editor if you have read and write permission. Relevant information is stored in a csv file with the name "createdProtocols.csv".
 2. ``protocolTemplate.xlsm :`` Macro-enabled excel file for the creation of protocols and protocol executions (don't forget to enable the macros). Before running the jupyter notebook, please save the file as an .xlsx file. This will disable the macros and allows it to be imported by the python script.
 
@@ -25,9 +25,13 @@ To run the scripts, the following requirements apply:
 1. ``patchNupload.ipynb :`` script to add/change metadata from an excel file (e.g. ExamplePatch.xlsx) to existing specimen instances in the KGE.
 2. ``ExamplePatch.xlsx :`` Example excel file to define metadata and update instances.
 
-**Person metadata**
+**Creating Persons**
 1. ``create_persons.ipynb :`` script to create persons (first name, last name, email address and ORCID) from excel file (e.g. personTemplate.xlsx) and upload instances to the correct space in the KGE (common for person and ORCID and restricted for email address). Relevant information is stored in a csv file with the name "createdPersons.csv".
 2. ``personTemplate.xlsx :`` Example excel file to define person metadata.
+
+**Releasing instances**
+1. ``release_instance :`` script to release instances based on the uuid. You can either list the uuids you want to release in an excel file (e.g. instances2release.xlsx), or you can paste an individual uuid in the script (when asked the questions).
+2. ``instances2release.xlsx :`` Example excel file for releasing multiple instances at the same time.
 
 ### Miscellaneous
 **MeshView related**
